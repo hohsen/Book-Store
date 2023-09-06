@@ -1,8 +1,15 @@
 import './vendor';
+import './_zeroing.css';
+import './index.css';
 
-import styles from './app.module.css';
-import { makeItBlue } from './blue';
+import { AppHeader } from './components';
+
+function App() {
+  return `
+    <div>
+      ${AppHeader({ title: 'BOOKSTORE' })};
+    </div>
+  `;
+}
 const root = document.getElementById('root');
-root.className = styles.blue;
-
-makeItBlue();
+root.innerHTML = App();

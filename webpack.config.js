@@ -25,12 +25,12 @@ module.exports = (env, options) => {
       rules: [
         ...rules.files(),
         rules.scripts(environment),
-        rules.styles(environment),
+        ...rules.styles(environment),
       ],
     },
     plugins: [
       plugins.html(PROJECT_HTML_ENTRY)(environment),
-      // plugins.images(environment),
+      plugins.images(environment),
       plugins.extractStyles(environment),
     ],
     devServer: {

@@ -2,10 +2,10 @@
 
 module.exports = {
   extends: [
+    'eslint:recommended',
     // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors.
     // Make sure this is always the last configuration in the extends array.
-    'plugin:prettier/recommended',
-    'eslint:recommended',
+    'prettier',
   ],
   env: {
     browser: true,
@@ -14,7 +14,7 @@ module.exports = {
     jest: true,
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   overrides: [
@@ -152,7 +152,7 @@ module.exports = {
         'keyword-spacing': 'error',
         'linebreak-style': [0, 'unix'],
         'max-nested-callbacks': [0, 2],
-        'new-cap': 'error',
+        'new-cap': 0,
         'new-parens': 'error',
         'newline-after-var': 0,
         'no-array-constructor': 'error',
@@ -171,7 +171,9 @@ module.exports = {
         'no-spaced-func': 'error',
         'no-ternary': 0,
         'no-trailing-spaces': 'error',
-        'no-underscore-dangle': 'error',
+        'no-underscore-dangle': ['error', {
+          allowAfterThis: true,
+        }],
         'no-unneeded-ternary': 0,
         'one-var': 0,
         'operator-assignment': [0, 'always'],
