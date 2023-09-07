@@ -1,11 +1,12 @@
 /*-------HEADER-------*/
 .header .container {
+  justify-content: space-between;
+  align-items: center;
   width: 1120px;
   height: 104px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 72px auto;
+  border-bottom: 1px #e7e7e7 solid;
 }
 
 .header__search {

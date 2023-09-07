@@ -7,14 +7,13 @@ module.exports = () => {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]?[hash]',
-            publicPath: './dist',
             outputPath: './images',
           },
         },
       ],
     },
     {
-      test: /\.(woff(2)?|ttf|eot|svg)$/,
+      test: /\.(woff(2)?|ttf|eot)$/,
       use: [
         {
           loader: 'file-loader',
