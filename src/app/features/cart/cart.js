@@ -1,6 +1,6 @@
 import styles from './cart.module.css';
 
-export function cart(){
+export function Cart(){
   return `
     <div>
       <h1 class=${styles.title}>Cart</h1>

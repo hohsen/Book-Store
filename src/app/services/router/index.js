@@ -1,1 +1,1 @@
-export { RouterService } from './router';
+export { RouteService } from './router';
