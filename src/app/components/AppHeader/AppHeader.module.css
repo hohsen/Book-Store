@@ -1,8 +1,6 @@
-/*-------HEADER-------*/
 .header .container {
   justify-content: space-between;
   align-items: center;
-  width: 1120px;
   height: 104px;
   display: flex;
   margin: 0 auto 72px auto;

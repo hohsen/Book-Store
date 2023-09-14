@@ -1,4 +1,4 @@
-import { AppHeader, AppLayout } from '@/components';
+import { AppFooter, AppHeader, AppLayout } from '@/components';
 import { Favorite } from '@/features';
 
 export function FavotirePage() {
@@ -6,5 +6,6 @@ export function FavotirePage() {
   return AppLayout({
     header: AppHeader({ title: 'Favorite' }),
     content: Favorite(),
+    footer: AppFooter(),
   });
 }
